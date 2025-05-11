@@ -29,14 +29,6 @@ Run the application:ng serve
 
 Open http://localhost:4200 in your browser to view the employee list.
 
-Testing
-
-Unit Tests: Run unit tests with Karma:ng test
-
-
-End-to-End Tests: Run e2e tests (requires an e2e framework):ng e2e
-
-
 
 Build
 To build the project for production:
