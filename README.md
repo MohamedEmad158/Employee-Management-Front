@@ -47,7 +47,6 @@ Notes
 
 If the Backend API is unavailable, the application uses mock data.
 Ensure CORS is enabled in the Backend for API integration (see Backend README: Employee Management Backend).
-I have not received the interview email mentioned earlier on mohamedemadmb@gmail.com or me298016@gmail.com. Please let me know if you need to resend it.
 For additional features (e.g., employee form, pagination), please contact me.
 
 Folder Structure
