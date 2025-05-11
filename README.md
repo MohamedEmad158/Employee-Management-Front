@@ -1,59 +1,60 @@
-# Employee
+# Employee Management Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+## Overview
+This is the frontend of the Employee Management application, built with **Angular 19** using standalone components. It displays a list of employees fetched from a .NET Core Backend API or mock data if the Backend is unavailable.
 
-## Development server
+## Features
+- Displays a table of employees with columns: ID, First Name, Last Name, Email, and Position.
+- Fetches data from the Backend API at `https://localhost:7047/api/Employees`.
+- Uses mock data as a fallback if the Backend is not available (e.g., Mohamed, Ahmed).
+- Responsive table styling with CSS.
 
-To start a local development server, run:
+## Prerequisites
+- Node.js (v18 or higher)
+- Angular CLI (v19 or higher)
+- Backend API running at `https://localhost:7047/api/Employees` (optional for mock data)
 
-```bash
-ng serve
-```
+## Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MohamedEmad158/Employee-Management-Front.git
+   cd Employee-Management-Front
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+Install dependencies:npm install
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-```bash
-ng generate component component-name
-```
+Run the application:ng serve
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
+Open http://localhost:4200 in your browser to view the employee list.
 
-## Building
+Testing
 
-To build the project run:
+Unit Tests: Run unit tests with Karma:ng test
 
-```bash
+
+End-to-End Tests: Run e2e tests (requires an e2e framework):ng e2e
+
+
+
+Build
+To build the project for production:
 ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The build artifacts will be stored in the dist/ directory.
+Notes
 
-## Running unit tests
+If the Backend API is unavailable, the application uses mock data.
+Ensure CORS is enabled in the Backend for API integration (see Backend README: Employee Management Backend).
+I have not received the interview email mentioned earlier on mohamedemadmb@gmail.com or me298016@gmail.com. Please let me know if you need to resend it.
+For additional features (e.g., employee form, pagination), please contact me.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Folder Structure
 
-```bash
-ng test
-```
+src/app/Shared/Interface/iemployee.ts: Defines TypeScript interfaces for API response.
+src/app/Components/list: Contains list.component.ts, .html, and .css for the employee list.
+src/app/Shared/Service/employee.service.ts: Handles API calls.
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Contact
+For any questions or feedback, reach out to Mohamed Emad at mohamedemadmb@gmail.com or me298016@gmail.com.```
